@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">demoImitationMovie</string>
+    <!--main 模块-->
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_movie">电影</string>
+    <string name="main_tab_cinema">影院</string>
+    <string name="main_tab_movieshow">演出</string>
+    <string name="main_tab_my">我的</string>
+    <string name="main_tab_default">  </string>
+
+
+    <!--新闻模块-->
+    <string name="newsSort_channelCommend">推荐频道</string>
+    <string name="newsSort_channelLocal">地方频道</string>
+    <string name="newsSort_title">频道定制</string>
+
+    <!--登录模块-->
+    <string name="login_login">登录</string>
+    <string name="login_title_code">手机号快捷登录</string>
+    <string name="login_title_pwd">账号密码登录</string>
+    <string name="login_hint_phone">手机号</string>
+    <string name="login_hint_code">验证码</string>
+    <string name="login_agreement">协议</string>
+
+
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 下面的白色面板挡住上面的三个边，只留下下边 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+            <solid android:color="@color/login_noFocus_gray" />
+            <corners android:radius="2000dp"/>
+</shape>

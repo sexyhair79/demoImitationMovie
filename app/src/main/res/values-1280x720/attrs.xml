@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="BannerView">
+        <!--<attr name="bannerCircleSrcDefault" format="reference"></attr>-->
+        <!--<attr name="bannerCircleSrcCurrent" format="reference"></attr>-->
+        <!--<attr name="bannerCircleWidth" format="dimension"></attr>-->
+        <!--<attr name="bannerCircleGap" format="dimension"></attr>-->
+        <attr name="bannerDefaultDrawable" format="reference"></attr>
+        <!--<attr name="bannerCircleBottomMargin" format="dimension"></attr>-->
+        <!--<attr name="bannerCircleRightMargin" format="dimension"></attr>-->
+        <!--<attr name="bannerCircleleftMargin" format="dimension"></attr>-->
+        <!--<attr name="bannerCircleTopMargin" format="dimension"></attr>-->
+        <!--<attr name="bannerCircleIsShowCircle" format="boolean"></attr>-->
+        <attr name="bannerAutoFling" format="boolean"></attr>
+    </declare-styleable>
+</resources>

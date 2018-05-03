@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 下面的白色面板挡住上面的三个边，只留下下边 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <solid android:color="@color/txt_gray_1" />
+            <!-- 描边 -->
+            <stroke
+                android:width="@dimen/d1"
+                android:color="@color/txt_gray_1" />
+
+            <padding
+                android:bottom="@dimen/d1"
+                android:left="0dip"
+                android:right="0dip"
+                android:top="0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/common_white" />
+        </shape>
+    </item>
+
+</layer-list>

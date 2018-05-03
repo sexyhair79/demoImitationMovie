@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_white"
+    android:orientation="vertical">
+
+    <com.sexyhair.imitatenews.common.components.CommonTitleView
+        android:id="@+id/newsSort_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_pagePadding"
+            android:paddingRight="@dimen/common_pagePadding">
+
+            <GridLayout
+                android:id="@+id/newsSort_userNewsSort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"></GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d10"
+                android:layout_marginRight="@dimen/d10"
+                android:layout_marginTop="@dimen/d40"
+                android:background="@drawable/newssort_channel_bg"
+                android:gravity="center">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/newsSort_channelCommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/d10"
+                        android:background="@drawable/newssort_channel_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:padding="@dimen/d10"
+                        android:text="@string/newsSort_channelCommend"
+                        android:textColor="@color/newssort_channel_txt_selector"
+                        android:textSize="@dimen/textSize25" />
+
+                    <RadioButton
+                        android:id="@+id/newsSort_channelLocal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d10"
+                        android:background="@drawable/newssort_channel_selector"
+                        android:button="@null"
+                        android:padding="@dimen/d10"
+                        android:text="@string/newsSort_channelLocal"
+                        android:textColor="@color/newssort_channel_txt_selector"
+                        android:textSize="@dimen/textSize25" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/newsSort_commendGridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"></GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true"><layer-list>
+            <item><shape>
+                    <solid android:color="@color/btn_checked_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/btn_common_shadow" />
+
+                    <corners android:radius="20000dp" />
+
+                    <padding android:bottom="1.5dip" android:left="0dip" android:right="0dip" android:top="0dip" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/btn_checked_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+        </layer-list></item>
+        
+    <item android:state_pressed="true"><layer-list>
+            <item><shape>
+                    <solid android:color="@color/btn_checked_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/btn_common_shadow" />
+
+                    <corners android:radius="20000dp" />
+
+                    <padding android:bottom="1.5dip" android:left="0dip" android:right="0dip" android:top="0dip" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/btn_checked_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+        </layer-list></item>
+        
+    <item android:state_checked="true"><layer-list>
+            <item><shape>
+                    <solid android:color="@color/btn_checked_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/btn_common_shadow" />
+
+                    <corners android:radius="20000dp" />
+
+                    <padding android:bottom="1.5dip" android:left="0dip" android:right="0dip" android:top="0dip" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/btn_checked_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+        </layer-list></item>
+        
+    <item android:state_selected="true"><layer-list>
+            <item><shape>
+                    <solid android:color="@color/btn_checked_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/btn_common_shadow" />
+
+                    <corners android:radius="20000dp" />
+
+                    <padding android:bottom="1.5dip" android:left="0dip" android:right="0dip" android:top="0dip" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/btn_checked_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+        </layer-list></item>
+        
+    <item><layer-list>
+            <item><shape>
+                    <solid android:color="@color/border_btn_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/btn_common_shadow" />
+
+                    <corners android:radius="20000dp" />
+
+                    <padding android:bottom="1.5dip" android:left="0dip" android:right="0dip" android:top="0dip" />
+                </shape></item>
+            <item><shape>
+                    <solid android:color="@color/border_btn_yellow" />
+
+                    <corners android:radius="20000dp" />
+                </shape></item>
+        </layer-list></item>
+
+</selector>

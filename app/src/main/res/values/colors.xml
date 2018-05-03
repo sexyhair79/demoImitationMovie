@@ -3,4 +3,60 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <!--白色阴影-->
+    <color name="common_white_semi">#88ffffff</color>
+    <!-- item中的点击效果 -->
+    <color name="ranking_item_selected">#40dedede</color>
+    <!--排行中的头部-->
+    <color name="ranking_head_bg">#FA628C</color>
+    <!--底部标签的颜色-->
+    <!--文字的灰色-->
+    <color name="common_txt_gray">#6a6a6a</color>
+    <!--&lt;!&ndash;白色-->
+
+    <color name="common_black">#000</color>
+    <!-- item中的点击效果 -->
+    <color name="txt_gray_1">#dedede</color>
+
+
+    <!--项目中的通用色值-->
+    <color name="common_title_black">#222222</color>
+    <!--整个项目的通用的红色-->
+    <color name="common_bg">#e8554d</color>
+    <!--红色阴影-->
+    <color name="common_bg_semi">#f2a7a2</color>
+
+    <!--蓝色-->
+    <color name="common_blue">#54bfe0</color>
+
+    <!--登录注册时按钮的灰色-->
+    <color name="login_noFocus_gray">#e6e6e6</color>
+    <color name="login_bg">#fcfcfc</color>
+    <color name="login_hint_gray">#c5c5cb</color>
+    <color name="login_getCode_gray">#999999</color>
+    <color name="login_line_gray">#ebebeb</color>
+    <color name="login_agreement_gray">#a9a9a9</color>
+
+
+
+
+
+    <!-- 通用按钮的下边阴影色 -->
+    <color name="btn_common_shadow">#afffffff</color>
+    <color name="btn_checked_yellow">#f0890f</color>
+    <color name="border_btn_yellow">#ff9518</color>
+
+
+
+
+    <!--home图标的色调-->
+    <color name="common_main_pink">#F45F78</color>
+    <!--home图标灰色的色调-->
+    <color name="common_main_gray">#777777</color>
+    <!--白色-->
+    <color name="common_white">#ffffff</color>
+
+
 </resources>

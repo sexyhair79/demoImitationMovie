@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/news_title_bg"
+    android:layout_height="wrap_content">
+    
+    <ImageButton
+        android:id="@+id/commonTitle_left"
+        android:layout_width="@dimen/nav_title"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:src="@drawable/main_tab_ranking_selected"
+        android:layout_height="@dimen/nav_title" />
+    <ImageButton
+        android:id="@+id/commonTitle_right"
+        android:layout_width="@dimen/nav_title"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:layout_height="@dimen/nav_title" />
+
+    <TextView
+        android:id="@+id/commonTitle_title"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@id/commonTitle_right"
+        android:layout_toRightOf="@id/commonTitle_left"
+        android:textSize="@dimen/textSize25"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
