@@ -11,9 +11,7 @@
         android:layout_height="@dimen/nav_height"
         android:layout_alignParentBottom="true"
         android:background="@drawable/main_nav_bg"
-        app:tabSelectedTextColor="@color/ranking_item_selected"
-        app:tabIndicatorHeight="0dp"
-        app:tabTextColor="@color/common_white"/>
+        app:tabIndicatorHeight="0dp" />
 
 
     <android.support.v4.view.ViewPager
@@ -21,6 +19,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/mainTab_layout"
-        android:layout_alignParentTop="true"
-       />
+        android:layout_alignParentTop="true" />
 </RelativeLayout>

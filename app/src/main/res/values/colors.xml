@@ -49,14 +49,24 @@
     <color name="border_btn_yellow">#ff9518</color>
 
 
+    <color name="colorInitFloatBackground">#b0ffffff</color>
+    <color name="colorCollapsedFloatBackground">#e4e4e4</color>
 
+
+
+<!--以下是这个项目的色值-->
 
     <!--home图标的色调-->
     <color name="common_main_pink">#F45F78</color>
     <!--home图标灰色的色调-->
     <color name="common_main_gray">#777777</color>
+    <!--背景灰-->
+    <color name="common_bg_gray">#f5f5f5</color>
     <!--白色-->
     <color name="common_white">#ffffff</color>
+    <!--按钮购票的色值-->
+    <color name="common_red">#ED3F3E</color>
+
 
 
 </resources>

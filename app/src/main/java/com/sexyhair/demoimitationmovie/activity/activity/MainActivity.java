@@ -19,6 +19,7 @@ import com.sexyhair.demoimitationmovie.activity.fragment.MyFragment;
 import com.sexyhair.demoimitationmovie.activity.fragment.NewsFragment;
 import com.sexyhair.demoimitationmovie.common.utils.Contants;
 import com.sexyhair.demoimitationmovie.common.utils.Logger;
+import com.sexyhair.demoimitationmovie.common.utils.PhoneUtils;
 import com.sexyhair.demoimitationmovie.common.utils.ResFileUtil;
 
 import java.util.ArrayList;
@@ -250,6 +251,12 @@ public class MainActivity extends BaseActivity {
         }
     }
 
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        PhoneUtils.getStatusHeight();
+    }
 
     @Override
     protected int getLayoutView() {

@@ -5,4 +5,8 @@ package com.sexyhair.demoimitationmovie.components.bannerview;
  */
 
 public class A {
+    
+
+    
+    
 }

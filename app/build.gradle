@@ -36,6 +36,8 @@ dependencies {
     compile 'io.reactivex:rxjava:1.2.0'
     compile 'io.reactivex:rxandroid:1.2.1'
 
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 //    compile 'com.android.support:recyclerview-v7:26.1.0'
 //    compile 'com.android.support:appcompat-v7:26.+'
 //    compile 'com.android.support:design:26.0.0'

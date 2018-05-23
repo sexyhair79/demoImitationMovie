@@ -23,4 +23,19 @@
     <string name="login_agreement">协议</string>
 
 
+    <!--首页-->
+    <string name="home_filesort_movie">电影</string>
+    <string name="home_filesort_file">电视剧</string>
+    <string name="home_filesort_variety">综艺</string>
+    <string name="home_filesort_book">书籍</string>
+
+    <!--首页&#45;&#45;title&#45;&#45;location-->
+    <string name="layout_location_text">北京</string>
+
+
+
+    <!--<string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>-->
+    <string name="header_float_behavior" translatable="false">com.sexyhair.demoimitationmovie.components.HeaderScrollingBehavior</string>
+    <string name="header_float_behavior1" translatable="false">com.sexyhair.demoimitationmovie.components.HeaderFloatBehavior</string>
+
 </resources>

@@ -30,8 +30,11 @@ public class Logger {
 	 * 程序中try出来的异常
 	 */
 	public static final String Log_TryException= "TryException";
-	
-	
+
+	/**
+	 * 网络访问数据的log
+	 */
+	public static final String Log_warn = "appwarn";
 	
 	private static int LOGLEVEL = 7;
 	private static int VERBOSE = 1;

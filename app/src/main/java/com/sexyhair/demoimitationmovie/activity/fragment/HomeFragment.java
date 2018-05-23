@@ -1,13 +1,25 @@
 package com.sexyhair.demoimitationmovie.activity.fragment;
 
 
+
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 
 import com.sexyhair.demoimitationmovie.R;
+import com.sexyhair.demoimitationmovie.common.context.AppContext;
 import com.sexyhair.demoimitationmovie.components.bannerview.BannerView;
 import com.sexyhair.demoimitationmovie.presenter.NavHomePresenter;
 import com.sexyhair.demoimitationmovie.view.NavHomeView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by sexyhair on 18/4/19.
@@ -15,8 +27,23 @@ import com.sexyhair.demoimitationmovie.view.NavHomeView;
 
 public class HomeFragment extends MVPBaseFragment<NavHomeView, NavHomePresenter> implements NavHomeView {
 
-    private TextView textview;
+
     private BannerView bannerView;
+//    private LinearLayout home_title_location;
+
+    ViewPager mViewPager;
+    List<Fragment> mFragments;
+    Toolbar mToolbar;
+
+    private int[] mTitles = new int[]{
+            R.string.home_filesort_movie,
+            R.string.home_filesort_file,
+            R.string.home_filesort_variety,
+            R.string.home_filesort_book
+
+    };
+
+
 
 
     @Override
@@ -27,15 +54,45 @@ public class HomeFragment extends MVPBaseFragment<NavHomeView, NavHomePresenter>
     @Override
     protected void findViews(View viewContainer) {
         bannerView = (BannerView) findViewById(R.id.bannerView);
-        textview = (TextView) findViewById(R.id.textview);
 
+        mViewPager = (ViewPager) findViewById(R.id.viewpager);
+
+//        home_title_location = (LinearLayout)findViewById(R.id.home_title_location);
+//        home_title_location.setAlpha(0.0f);
+//        getStatusHeight();
+//        mToolbar = (Toolbar)findViewById(R.id.toolbar) ;
+//        mToolbar.setTitle("唐嫣");
     }
-
 
     @Override
     protected void initViews() {
+        setupViewPager();
     }
 
+
+    private void setupViewPager() {
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        setupViewPager(viewPager);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+    }
+
+    private void setupViewPager(ViewPager viewPager) {
+        mFragments = new ArrayList<>();
+        for (int i = 0; i < mTitles.length; i++) {
+            HomeSortFragment listFragment = new HomeSortFragment();
+            mFragments.add(listFragment);
+        }
+        HomeSortAdapter adapter =
+                new HomeSortAdapter(
+//                        getSupportFragmentManager(),
+                        getChildFragmentManager(),
+                        mFragments, mTitles);
+
+
+        viewPager.setAdapter(adapter);
+    }
 
     @Override
     protected void populateData() {
@@ -52,8 +109,56 @@ public class HomeFragment extends MVPBaseFragment<NavHomeView, NavHomePresenter>
 
     @Override
     public void showMovieList(String result) {
-        textview.setText(result);
+//        textview.setText(result);
     }
+
+    public class HomeSortAdapter extends FragmentPagerAdapter {
+
+        protected List<Fragment> mFragmentList;
+
+        protected int[] mTitles;
+
+
+        public HomeSortAdapter(FragmentManager fm, List<Fragment> fragmentList, int[] mTitles) {
+            super(fm);
+            if (fragmentList == null) {
+                fragmentList = new ArrayList<>();
+            }
+            this.mFragmentList = fragmentList;
+            this.mTitles = mTitles;
+        }
+
+        public void add(Fragment fragment) {
+            if (isEmpty()) {
+                mFragmentList = new ArrayList<>();
+
+            }
+            mFragmentList.add(fragment);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            //        Logger.i("BaseFragmentAdapter position=" +position);
+            return isEmpty() ? null : mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return isEmpty() ? 0 : mFragmentList.size();
+        }
+
+        public boolean isEmpty() {
+            return mFragmentList == null;
+
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return getString(mTitles[position]);
+        }
+
+    }
+
 
 
     @Override

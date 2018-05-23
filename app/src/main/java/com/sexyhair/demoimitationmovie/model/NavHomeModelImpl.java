@@ -41,12 +41,11 @@ public class NavHomeModelImpl implements NavHomeModel {
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .build();
 
-
         MovieService movieService = retrofit.create(MovieService.class);
         Observable<AppResponse> movieCall = movieService.getPMovies();
         movieCall.
-                subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread()).
+                subscribeOn(Schedulers.io())//指定 subscribe() 所发生的线程，即 Observable.OnSubscribe 被激活时所处的线程。或者叫做事件产生的线程
+                .observeOn(AndroidSchedulers.mainThread()).//指定 Subscriber 所运行在的线程。或者叫做事件消费的线程
                 subscribe(new Subscriber<AppResponse>() {
                     @Override
                     public void onCompleted() {
